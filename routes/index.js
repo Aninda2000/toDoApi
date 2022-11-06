@@ -25,4 +25,6 @@ router.delete(
   toDoController.deleteToDo
 );
 
+router.get("/todo", toDoController.todo);
+
 module.exports = router;

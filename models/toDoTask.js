@@ -10,13 +10,16 @@ const toDoSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    completed:{
-        type:Boolean,
+    completed: {
+      type: Boolean,
     },
-    user:{
-        type:mongoose.Schema.ObjectId,
-        ref:'user'
-    }
+    date: {
+      type: Number,
+    },
+    user: {
+      type: mongoose.Schema.ObjectId,
+      ref: "user",
+    },
   },
   {
     timestamps: true,

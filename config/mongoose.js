@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// mongoose.connect(process.env.DB);
 mongoose.connect("mongodb://localhost/ToDoApp");
 
 const db = mongoose.connection;
